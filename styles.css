@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue";
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width: 400px;
+    padding: 1rem;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.circular-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    background-color: rgb(250, 214, 168);
+}
+
+.progress-value {
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(153, 100, 2);
+}
+
+.text {
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(167, 127, 20);
+    font-style: italic;
+}
